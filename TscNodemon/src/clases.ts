@@ -57,3 +57,31 @@ class Ave extends Animal{
 let ave1 = new Ave('De Corral','mediano/grande',1)
 ave1.comer(4)
 console.log(ave1.presentarse())
+
+/*
+  ===============================================================================================================
+  ===============================================================================================================
+*/
+/**
+ * CLASES CON ATRIBUTOS CON DATOS GENERICOS
+ */
+class Roedores <T>{
+    public caracteris:T[];
+    constructor(caracs:T[]){
+        this.caracteris = caracs
+    }
+    getCarac(i:number):T{
+        return this.caracteris[i]
+    }
+}
+let cars1=[1,2,3,4];
+let cars2=['uno','dos','tres'];
+let cars3=[1,'dos',3,false];
+
+var rat1 = new Roedores(cars1);
+var rat2 = new Roedores(cars2);
+var rat3 = new Roedores(cars3);
+
+console.log('rat1.getCarac(3): ',rat1.getCarac(3))
+console.log('rat2.getCarac(2): ',rat2.getCarac(2))
+console.log('rat3.getCarac(3): ',rat3.getCarac(3))
