@@ -2,6 +2,8 @@ export const pi:number = 3.14;
 
 let nomb:string = "cadena";
 
+let vec0: number[]=new Array();
+vec0.push(2);
 let vec1: any[]=[1,'dos',false,54];
 var cosas:any[] = new Array();
 cosas.push("primero",2);
